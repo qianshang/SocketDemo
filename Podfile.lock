@@ -1,0 +1,15 @@
+PODS:
+  - CocoaAsyncSocket (7.6.2)
+  - IQKeyboardManagerSwift (5.0.7)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+  - IQKeyboardManagerSwift
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: 3541e024f48c54b251638ef72d51dd42808de932
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+
+PODFILE CHECKSUM: b731ffc47ab232e5b614855833e03d841d3214fd
+
+COCOAPODS: 1.4.0.beta.1

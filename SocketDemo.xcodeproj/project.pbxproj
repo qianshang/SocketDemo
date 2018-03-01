@@ -12,9 +12,12 @@
 		04894D45204684BC0098523B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04894D43204684BC0098523B /* Main.storyboard */; };
 		04894D47204684BC0098523B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04894D46204684BC0098523B /* Assets.xcassets */; };
 		04894D4A204684BC0098523B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04894D48204684BC0098523B /* LaunchScreen.storyboard */; };
+		04894D52204684D80098523B /* SocketUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04894D51204684D80098523B /* SocketUtil.swift */; };
+		16841114D1380121C751D65A /* Pods_SocketDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2212C0073E5D70C2D6FDDF1A /* Pods_SocketDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03BB3BC6DC713096BB1D6AD4 /* Pods-SocketDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocketDemo/Pods-SocketDemo.release.xcconfig"; sourceTree = "<group>"; };
 		04894D3C204684BC0098523B /* SocketDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocketDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04894D3F204684BC0098523B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04894D41204684BC0098523B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		04894D46204684BC0098523B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04894D49204684BC0098523B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04894D4B204684BC0098523B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04894D51204684D80098523B /* SocketUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketUtil.swift; sourceTree = "<group>"; };
+		11869CF1A48BBDEA0AF47909 /* Pods-SocketDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocketDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocketDemo/Pods-SocketDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		2212C0073E5D70C2D6FDDF1A /* Pods_SocketDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocketDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16841114D1380121C751D65A /* Pods_SocketDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				04894D3E204684BC0098523B /* SocketDemo */,
 				04894D3D204684BC0098523B /* Products */,
+				FB947F17E88D31FAA2BF3D84 /* Pods */,
+				E846850EFB0683A07A6FA85D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,30 @@
 			children = (
 				04894D3F204684BC0098523B /* AppDelegate.swift */,
 				04894D41204684BC0098523B /* ViewController.swift */,
+				04894D51204684D80098523B /* SocketUtil.swift */,
 				04894D43204684BC0098523B /* Main.storyboard */,
 				04894D46204684BC0098523B /* Assets.xcassets */,
 				04894D48204684BC0098523B /* LaunchScreen.storyboard */,
 				04894D4B204684BC0098523B /* Info.plist */,
 			);
 			path = SocketDemo;
+			sourceTree = "<group>";
+		};
+		E846850EFB0683A07A6FA85D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2212C0073E5D70C2D6FDDF1A /* Pods_SocketDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB947F17E88D31FAA2BF3D84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11869CF1A48BBDEA0AF47909 /* Pods-SocketDemo.debug.xcconfig */,
+				03BB3BC6DC713096BB1D6AD4 /* Pods-SocketDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04894D4E204684BC0098523B /* Build configuration list for PBXNativeTarget "SocketDemo" */;
 			buildPhases = (
+				9C3CCC556F8EBBF67DE3CD5A /* [CP] Check Pods Manifest.lock */,
 				04894D38204684BC0098523B /* Sources */,
 				04894D39204684BC0098523B /* Frameworks */,
 				04894D3A204684BC0098523B /* Resources */,
+				52F9DBCF3E3E85EB729FD385 /* [CP] Embed Pods Frameworks */,
+				DBD877D48EB27B60A434787D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +161,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52F9DBCF3E3E85EB729FD385 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocketDemo/Pods-SocketDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocketDemo/Pods-SocketDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C3CCC556F8EBBF67DE3CD5A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocketDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBD877D48EB27B60A434787D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocketDemo/Pods-SocketDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04894D38204684BC0098523B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04894D52204684D80098523B /* SocketUtil.swift in Sources */,
 				04894D42204684BC0098523B /* ViewController.swift in Sources */,
 				04894D40204684BC0098523B /* AppDelegate.swift in Sources */,
 			);
@@ -272,11 +359,13 @@
 		};
 		04894D4F204684BC0098523B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11869CF1A48BBDEA0AF47909 /* Pods-SocketDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZZS2UU57R;
 				INFOPLIST_FILE = SocketDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zk.SocketDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +376,13 @@
 		};
 		04894D50204684BC0098523B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03BB3BC6DC713096BB1D6AD4 /* Pods-SocketDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WZZS2UU57R;
 				INFOPLIST_FILE = SocketDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zk.SocketDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
